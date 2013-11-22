@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+    
+		<a href="http://google.com" id="google-link">Click me</a>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<label>Ow! (x<span id="poke-count">0</span>)</label>
+		<input id="poke" type="submit" />
+    	<button id="my-button">Click Here for the Pain!</button>
+    	<script>
+    		$('#google-link').on('click', function(e) {
+    			e.preventDefault();
+    			$('#google-link').text('No Google For You!')
+    		});
+    	
+    		// var serve = function (x) {
+    		// 	x();
+    		// };
+    		// var greet = function () {
+    		// 	alert('hi');
+    		// };
+
+    		// var doubleUp = function (y){
+    		// 	y();
+    		// 	y();
+    		// };
+
+    		// var punch = function () {
+    		//   alert('POWA!');
+    		// };
+    		// var kick = function () {
+    		//   alert('KIA!');
+    		// }
+    		
+    		// var now = new Date();
+
+    		// var serveTime = function(time){
+    		// 	time(now);
+    		// };
+    		// var logTime = function (time) {
+    		//   console.log('The current time is:', time);
+    		// };
+    		// var alertTime = function (time) {
+    		//   alert('The current time is: ' + time);
+    		// };
+
+
+    		// // logTime(now);
+    		// // alertTime(now);
+
+    		// serveTime(logTime); // This should log the current time
+    		// serveTime(alertTime); // This should alert the current time
+
+    		// // doubleUp(punch); // This should alert twice
+    		// // doubleUp(kick); // This should alert twice
+
+    		// var logData = function(data) {
+    		// 	alert(data)
+    		// };
+
+    		// var displayData = function (alertDataFunc, logDataFunc, data) {
+   //  		// 	alertDataFunc(data);
+   //  		// 	logDataFunc(data);
+   //  		// }
+
+   //  		// displayData(alert, logData, "IMPORTANT MESSAGE: I like your shirt.");
+
+    		var yell = function(words) {
+    			return words.toUpperCase() + "!";
+    		};
+
+    		var ask = function(words) {
+    			return "Can you please " + words + "?";
+    		};
+
+    		var serveMessage = function (name, words, x ) {
+    			return name + ": " + x(words);
+    		};
+
+   //  		var ex1 = yell('what?');
+   //  		console.log('Ex1 should be "WHAT?!":', ex1);
+
+   //  		var ex2 = ask('open the door');
+   //  		console.log('Ex2 should be "Can you please open the door?":', ex2);
+
+   //  		var ex3 = serveMessage('Bob','call me', ask);
+			// console.log('Ex3 should be "Bob: Can you please call me?":', ex3);
+
+			// var ex4 = serveMessage('Bob','call me', yell);
+			// console.log('Ex4 should be "Bob: CALL ME!":', ex4);
+
+			// // setTimeout(function () { 
+			// // 	alert('Stop alerting yourself'); 
+			// // }, 1000);
+
+
+			// // var witherInPain = function () {
+			// //   alert('ouch... *cough cough*');
+			// //   // return
+			// // };
+			
+			// // $('#my-button').on('click', witherInPain );
+
+
+			// // $('#my-button').on('click', function () {
+			// //   alert('ouch... *cough cough*');
+			// // });
+
+
+   //  		var yell = function(words) {
+   //  			return words.toUpperCase() + "!";
+   //  		};
+
+   //  		var ask = function(words) {
+   //  			return "Can you please " + words + "?";
+   //  		};
+
+   //  		var serveMessage = function (name, words, x ) {
+   //  			return name + ": " + x(words);
+   //  		};
+
+
+   //  		var result = serveMessage('Bob','call me', ask);
+   //  		console.log(result);
+
+   //  		result = serveMessage('Bob','call me', function(words) {
+   //  			return words.toUpperCase() + "!";
+   //  		});
+   //  		console.log(result);
+
+   //  		console.log(serveMessage('Bob','call me', function(words) {
+   //  			return words.toUpperCase() + "!";
+   //  		}));
+
+
+
+   //  		var result = serveMessage('Bob','call me', function(words) {
+   //  			return "Can you please " + words + "?";
+   //  		});
+   //  		console.log(result);
+
+   //  		result = serveMessage('Bob','call me', function(words) {
+   //  			return words.toUpperCase() + "!";
+   //  		});
+   //  		console.log(result);
+
+
+   	$(document).on('click', 'jumping-bean', moveButton);
+
+	var randomPx = function () {
+		return Math.floor(Math.random() * 50) + 'px';
+	};
+
+    </script>
+    
+    <style>
+    	.jumping-bean {
+    		position: absolute; top: 10px; right: 10px;
+    		font-size: 2em;
+     	}
+   </style>
+
+
+
+
+   <button class='jumping-bean'>how u bean</button>
+
+
+	
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

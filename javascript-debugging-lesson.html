@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Javascript Bare</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var yell = function yell (str) {
+			return str.toUpperCase() + "!";
+		}
+		var ask = function ask (str) {
+			return "Can you please " + str + "?";
+		}
+		var serveMessage = function serveMessage (name, string, func) {
+		    if (name === "Joe"){
+		    	throw "I don't like Joe";
+		    }
+		    return name + ": " + func(string);
+		};
+
+</script>
+
+</body>
+</html>

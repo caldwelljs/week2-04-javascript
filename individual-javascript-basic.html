@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Individual Practice</title>
+    </head>
+    
+    <body>
+        <style>
+            .jumping-bean {
+                position: absolute; top: 10px; right: 10px;
+                font-size: 2em;
+            }
+        </style>
+
+        <button class='jumping-bean'>how u bean</button>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">      
+            
+            var randomPx = function () {
+                return Math.floor(Math.random() * 50) + 'px';
+            };
+
+            var moveButton = function () {
+                var styles = { top: randomPx(), right: randomPx() }
+                $(".jumping-bean").css(styles);
+            };
+
+---------------------------
+            $(document).on('click', '.jumping-bean', moveButton);
+
+            setTimeout(function () { 
+              alert('Stop alerting yourself'); 
+            }, 1000);
+----------------------------
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
